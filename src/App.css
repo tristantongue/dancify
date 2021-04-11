@@ -1,26 +1,55 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap');
+
+html {
+  height: 100%;
+}
+
+body {
+  min-height: 100%;
+  background-color: black;
+}
+
+.root {
+  padding: 0;
+  height: 100%;
+}
+
+
 .App {
+  font-family:'Montserrat';
   text-align: center;
+  background-color: black;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: auto auto auto;
+  border: 0;
+  margin: 0;
+  padding: 0;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
+header {
+  grid-column: span 3;
+  grid-row: 1;
+  border: 0;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  display: grid;
+}
+
+.SubHeader {
+  grid-row: 2;
+  grid-column: span 3;
+  border: 0;
+  align-items: center;
+  display: grid;
+}
+
+.GraphArea {
+  grid-row: 3;
+  grid-column: span 3;
+  background-color: black;
+  align-items: center;
+  padding: 10px;
+  text-align: center;
   color: white;
 }
 
@@ -28,11 +57,44 @@
   color: #61dafb;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+
+.LoadingInfo {
+  color: #FFF;
+  padding-top: 15px;
+  padding-bottom: 20px;
+}
+
+.linktospotify {
+  background-color: transparent;
+    border-radius: 2em;
+    border: 0.2em solid #1db954;
+    color: #1db954;
+    cursor: pointer;
+    font-size: 3vmin;
+    padding: 0.7em 1.5em;
+    text-transform: uppercase;
+    transition: all 0.25s ease;
+    width: 33%;
+    justify-self: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    text-decoration: none;
+}
+
+.linktospotify:hover {
+  background: #1db954;
+  color: #333;
+}
+
+.footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: black;
+  color: white;
+  text-align: center;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  text-decoration: none;
 }

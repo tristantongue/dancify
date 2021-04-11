@@ -1,0 +1,25 @@
+.btn {
+    background-color: transparent;
+    border-radius: 2em;
+    border: 0.2em solid #1db954;
+    color: #1db954;
+    cursor: pointer;
+    font-size: 3vmin;
+    padding: 0.7em 1.5em;
+    text-transform: uppercase;
+    transition: all 0.25s ease;
+    width: 33%;
+    justify-self: center;
+    text-decoration: none;
+  }
+  
+  
+  
+  .btn:hover {
+    background: #1db954;
+    color: #333;
+  }
+
+  .App-link {
+    color: #61dafb;
+  }

@@ -1,0 +1,14 @@
+h2 {
+    text-align: center;
+    color: white;
+    background-color: black;
+    padding: 1px;
+    margin: 0px;
+}
+
+.sh {
+    align-items: center;
+    justify-items: center;
+    display: grid;
+    padding: 15px;
+}
