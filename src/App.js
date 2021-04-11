@@ -25,7 +25,7 @@ function App() {
   const {
     REACT_APP_CLIENT_ID,
   } = process.env;
-  
+
   const REACT_APP_AUTHORIZE_URL = 'https://accounts.spotify.com/authorize'
 
   const scopes = [
@@ -71,7 +71,6 @@ function App() {
         let song = item.track;
         let songID = song.id;
         listOfSongs.push(songID)
-        console.log(song.name)
       }
       if (data.items.length < 50) {
         checker = false;
@@ -149,7 +148,6 @@ function App() {
     })
     .then(response => response.json())
     .then(data => {
-      console.log('playlist info', data)
       playlistID = data.id
       setPlaylist(data);
     })

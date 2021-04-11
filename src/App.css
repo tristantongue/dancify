@@ -87,15 +87,14 @@ header {
 }
 
 .footer {
-  position: absolute;
   left: 0;
   bottom: 0;
   width: 100%;
   background-color: black;
   color: white;
   text-align: center;
-  padding-top: 10px;
-  padding-bottom: 10px;
+  padding-top: 5px;
+  padding-bottom: 20px;
   text-decoration: none;
   grid-column: 2;
 }
