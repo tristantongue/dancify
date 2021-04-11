@@ -7,7 +7,18 @@ const useStyles = makeStyles({
         color: 'green',
         display: 'flex',
         margin: 'auto',
-    }
+    },
+    '@keyframes fadeIn': {
+        from: {opacity:0},
+        to: {opacity:1}
+      },
+    loadingtext: {
+        color: 'white',
+        animation: 'fadeIn 2s',
+        maxWidth: '60%',
+        margin: 'auto',
+        paddingTop: '10px',
+    },
 })
 
 function Spinner() {
@@ -16,6 +27,7 @@ function Spinner() {
     return (
         <div>
             <CircularProgress className={classes.spinner}></CircularProgress>
+            <div className={classes.loadingtext}>This could take around 30 seconds if your library has thousands of songs in it.</div>
         </div>
     )
 }

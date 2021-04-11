@@ -77,7 +77,7 @@ function App() {
       }
     });
       x++;
-      await timer(500)
+      await timer(200)
     }
     let totalSongs = listOfSongs.length;
     let tempList = []
