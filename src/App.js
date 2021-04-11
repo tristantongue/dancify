@@ -24,8 +24,9 @@ function App() {
 
   const {
     REACT_APP_CLIENT_ID,
-    REACT_APP_AUTHORIZE_URL,
   } = process.env;
+  
+  const REACT_APP_AUTHORIZE_URL = 'https://accounts.spotify.com/authorize'
 
   const scopes = [
     "user-library-read",
@@ -33,6 +34,7 @@ function App() {
     "playlist-modify-private",
   ];
   const redirect_uri = window.location.origin
+  
 
   function getMe() {
     // gets user information after token authorization 

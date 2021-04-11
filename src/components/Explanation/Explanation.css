@@ -3,3 +3,9 @@
     justify-self: center;
     padding: 5px;
 }
+
+.linktoguide {
+    text-decoration: none;
+    color: #FFF;
+    font-weight: bold;
+}
