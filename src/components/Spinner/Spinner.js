@@ -9,12 +9,16 @@ const useStyles = makeStyles({
         margin: 'auto',
     },
     '@keyframes fadeIn': {
-        from: {opacity:0},
-        to: {opacity:1}
+        "0%, 100%": {
+            opacity:0,
+        },
+        "50%": {
+            opacity:1,
+        },
       },
     loadingtext: {
         color: 'white',
-        animation: 'fadeIn 2s',
+        animation: '$fadeIn 2s infinite',
         maxWidth: '60%',
         margin: 'auto',
         paddingTop: '10px',
