@@ -103,7 +103,13 @@ function App() {
     }
     if (danceSongs) {
       danceSongs.sort((a, b) => b.danceability - a.danceability)}
-    let finalDanceList = danceSongs.splice(0, 49)
+    let finalDanceList = []
+    for (let track of danceSongs) {
+      if (finalDanceList.length < 49 && (track.tempo >= 115 && track.tempo <= 130)) {
+        finalDanceList.push(track)
+      }
+    }
+    // let finalDanceList = danceSongs.splice(0, 49)
     let finalIds = []
     let finalUris = []
     for (let banger of finalDanceList) {
@@ -141,7 +147,7 @@ function App() {
       headers: {'Authorization': 'Bearer ' + token},
       json: true,
       body: JSON.stringify({
-        "name": "Dancify Playlist",
+        "name": "Dancify",
         "description": "50 groovy tunes!",
         "public": false
         }),
