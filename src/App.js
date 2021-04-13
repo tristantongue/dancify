@@ -105,7 +105,7 @@ function App() {
       danceSongs.sort((a, b) => b.danceability - a.danceability)}
     let finalDanceList = []
     for (let track of danceSongs) {
-      if (finalDanceList.length < 49 && (track.tempo >= 115 && track.tempo <= 130)) {
+      if (finalDanceList.length < 49 && (track.tempo >= 118 && track.tempo <= 130)) {
         finalDanceList.push(track)
       }
     }
