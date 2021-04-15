@@ -1,3 +1,66 @@
+.explainBox {
+    box-sizing: border-box;
+    padding: 20px;
+    background-color: #1db954;
+    transition: .5s;
+    margin-top: 20px;
+    position: relative;
+}
+
+.explainBox:hover {
+    transform: translateY(-20px);
+}
+
+.explainBox::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(45deg, #1db954, #FFF);
+}
+
+.explainBox::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(45deg, #1db954, #FFF);
+    filter: blur(20px);
+}
+
+.explainBox span {
+    position: absolute;
+    top: 6px;
+    left: 6px;
+    right: 6px;
+    bottom: 6px;
+    background: rgba(0,0,0,0.6);
+    z-index: 2;
+
+}
+
+.explainBox span::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 50%;
+    height: 100%;
+    background: rgba(255,255,255,0.1);
+
+}
+
+.explainBox .explain {
+    position: relative;
+    z-index: 10;
+    padding: 20px 40px;
+}
+
+
 .explain {
     text-align: center;
     justify-self: center;
@@ -9,3 +72,4 @@
     color: #FFF;
     font-weight: bold;
 }
+
